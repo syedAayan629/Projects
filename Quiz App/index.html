@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+      
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDGbTPW8iSFJpn1oJnUqyhBXMJdP9y5keE",
+    authDomain: "quiz-application-10553.firebaseapp.com",
+    projectId: "quiz-application-10553",
+    storageBucket: "quiz-application-10553.firebasestorage.app",
+    messagingSenderId: "5076801057",
+    appId: "1:5076801057:web:5bd2e8f412d3d9f7e87560",
+    measurementId: "G-99SGDT4H6G"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container" id="quiz">
+      <div class="header-container">
+        <h1>Quiz App</h1>
+        <h2 id="question">Question text</h2>
+      </div>
+      <div class="options">
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
